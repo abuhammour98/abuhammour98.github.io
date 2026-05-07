@@ -69,6 +69,14 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      white-space: nowrap;
+      min-width: 0;
+    }
+    .nav-logo-short { display: none; }
+    @media (max-width: 700px) {
+      .nav-logo { font-size: 16px; }
+      .nav-logo-full { display: none; }
+      .nav-logo-short { display: inline; }
     }
     .nav-logo-dot {
       width: 10px; height: 10px;
@@ -537,11 +545,10 @@
     <div class="nav-inner">
       <a href="#top" class="nav-logo">
         <span class="nav-logo-dot"></span>
-        Ahmad · IT Help
+        <span class="nav-logo-full">IT Support in Mission Viejo and Orange County</span>
+        <span class="nav-logo-short">Ahmad · IT Help</span>
       </a>
       <div class="nav-links">
-        <a href="#reviews" class="nav-link nav-hide-sm">Customer Reviews</a>
-        <a href="review.html" target="_blank" class="nav-cta-ghost nav-hide-sm">Leave a Review</a>
         <a href="#contact" class="nav-cta">Get Help →</a>
       </div>
     </div>
@@ -594,7 +601,7 @@
 
   <div class="mobile-drawer" id="mobile-drawer">
     <div class="mobile-drawer-header">
-      <span class="mobile-drawer-title">Ahmad · IT Help</span>
+      <span class="mobile-drawer-title">IT Support in Mission Viejo and Orange County</span>
       <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close menu">
         <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
